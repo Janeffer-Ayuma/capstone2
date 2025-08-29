@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Purple to Blue */
+  color: white;
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #b92b27); /* Purple to Red */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* Round image */
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+}
+
+#projects {
+  background: #f3e8ff; /* Soft lavender */
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  opacity: 0.9;
+}
+
+/* About Section */
+#about {
+  background: #fff;
+  border-left: 6px solid #6a11cb;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+}
+
+
+.contact-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Purple gradient */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#contact {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple Gradient */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #ffeb3b; /* Yellow accent for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
